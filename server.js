@@ -31,7 +31,7 @@ app.delete('/notes/:index', (req,res)=>{
             "response":"note not found"
         });
     } else {
-        delete notes[index];
+        notes.splice(index,1);
         res.status(200).json({
             "response":"note deleted successfully"
         });

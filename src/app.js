@@ -1,11 +1,17 @@
 //importing express modules
 const express = require("express");
 
+//importing cors
+const cors = require("cors");
+
 //creating a server
 const app = express();
 
 //adding middleware
 app.use(express.json());
+
+//cors middleware
+app.use(cors());
 
 //import the note model
 const noteModel = require("./models/note.model");

@@ -47,3 +47,5 @@ app.patch('/notes/:index', (req,res)=>{
         "response":"note updated successfully"
     });
 })
+
+console.log("github connected");
